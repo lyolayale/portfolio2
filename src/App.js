@@ -1,6 +1,7 @@
 import React from "react";
 import Projects from "./components/Projects";
 import SocialProfiles from "./components/SocialProfiles";
+import Title from "./components/Title";
 
 // profile image
 import profileImage from "./assets/images/profile-image.png";
@@ -25,7 +26,8 @@ export default class App extends React.Component {
           </a>
         </div>
         <h1>Welcome All!</h1>
-        <p>My name is Eric. I'm a developer.</p>
+        <p>My name is Eric.</p>
+        {this.state.displayBio && <Title />}
         <p>
           I'm always looking forward to learning and working on meaningful
           projects.
