@@ -11,12 +11,13 @@ import Jokes from "../src/components/Jokes";
 import "./css/normalize.css";
 import "./css/main.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Browser History
+const history = ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter history={createBrowserHistory()}>
+    <BrowserRouter>
       <Routes>
-        <Route path="/portfolio2" element={<App />} />
-        <Route path="/portfolio2/jokes" element={<Jokes />} />
+        <Route path="/" element={<App />} />
+        <Route path="/jokes" element={<Jokes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
