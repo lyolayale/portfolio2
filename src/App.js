@@ -2,7 +2,6 @@ import React from "react";
 import Projects from "./components/Projects";
 import SocialProfiles from "./components/SocialProfiles";
 import Title from "./components/Title";
-import Jokes from "./components/Jokes";
 
 // profile image
 import profileImage from "./assets/images/profile-image.png";
@@ -55,7 +54,6 @@ export default class App extends React.Component {
           </section>
         )}
         <Projects />
-        <Jokes />
         <SocialProfiles />
       </main>
     );
